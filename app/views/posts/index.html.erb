@@ -1,0 +1,5 @@
+<%# link index page to show page  %>
+
+<% @posts.each do |post| %>
+  <div><%= link_to post.title, post_path(post.id) %></div>
+<% end %>
